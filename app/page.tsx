@@ -34,7 +34,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-placeholder">
-          <img src="/hero-banner.png" alt="Niyenin Sports Cover" className="hero-banner-img" />
+          <img src="/hero-banner.avif" alt="Niyenin Sports Cover" className="hero-banner-img" />
         </div>
       </section>
 
