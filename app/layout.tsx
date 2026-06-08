@@ -3,6 +3,7 @@ import "./globals.css";
 import { CartProvider } from "./CartContext";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import GlobalDrawers from "./components/GlobalDrawers";
 
 export const metadata: Metadata = {
   title: "Niyenin | Premium Argentina & Brazil Jerseys",
@@ -20,6 +21,7 @@ export default function RootLayout({
         <CartProvider>
           <Navbar />
           {children}
+          <GlobalDrawers />
           <Footer />
         </CartProvider>
       </body>

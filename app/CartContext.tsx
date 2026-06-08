@@ -112,6 +112,87 @@ export const JERSEYS: Jersey[] = [
   },
 ];
 
+export interface GeneralProduct {
+  id: string;
+  name: string;
+  price: number;
+  oldPrice?: number;
+  discount?: number;
+  rating: number;
+  reviews: number;
+  image: string;
+  category: string;
+}
+
+export const BEST_SELLERS: GeneralProduct[] = [
+  {
+    id: "bs-watch",
+    name: "Haylou Smart Watch 2",
+    price: 2450,
+    oldPrice: 3200,
+    discount: 23,
+    rating: 5,
+    reviews: 128,
+    image: "/smartwatch.png",
+    category: "electronics"
+  },
+  {
+    id: "bs-earbuds",
+    name: "boAt Airdopes 131",
+    price: 1299,
+    oldPrice: 1800,
+    discount: 28,
+    rating: 5,
+    reviews: 96,
+    image: "/airdopes.png",
+    category: "electronics"
+  },
+  {
+    id: "bs-powerbank",
+    name: "Xiaomi Power Bank 20000mAh",
+    price: 1799,
+    oldPrice: 2200,
+    discount: 18,
+    rating: 5,
+    reviews: 75,
+    image: "/powerbank.png",
+    category: "mobile"
+  },
+  {
+    id: "bs-shirt",
+    name: "Men's Casual Shirt",
+    price: 850,
+    oldPrice: 1200,
+    discount: 29,
+    rating: 5,
+    reviews: 64,
+    image: "/shirt.png",
+    category: "fashion"
+  },
+  {
+    id: "bs-cookware",
+    name: "Non-Stick Cookware Set",
+    price: 2150,
+    oldPrice: 2800,
+    discount: 23,
+    rating: 5,
+    reviews: 87,
+    image: "/cookware.png",
+    category: "home-living"
+  },
+  {
+    id: "bs-tablets",
+    name: "Finish Dishwasher Tablets",
+    price: 1150,
+    oldPrice: 1500,
+    discount: 23,
+    rating: 5,
+    reviews: 43,
+    image: "/dishwasher.png",
+    category: "home-living"
+  }
+];
+
 export function CartProvider({ children }: { children: React.ReactNode }) {
   const [cart, setCart] = useState<CartItem[]>([]);
   const [wishlist, setWishlist] = useState<string[]>([]);
